@@ -145,7 +145,6 @@ nav img:first-child {
 
 body > section > div:nth-child(1) {
   text-align: center;
-  margin: 20px;
   letter-spacing: 3px;
 }
 
@@ -275,7 +274,7 @@ hr {
 
 /* Onglet */
 .onglet-js {
-  width: 80%;
+  width: 100%;
   height: 35vh;
   background: #f1f1f1;
   border-radius: 2px;
@@ -325,7 +324,7 @@ hr {
 /* Anim  onglet-js*/
 
 .activer {
-  background: rgb(194, 170, 37);
+  background: rgb(201, 185, 39);
   color: #f1f1f1;
   transition: all 0.3s ease;
 }
@@ -385,6 +384,23 @@ body > div > div {
   font-size: 20px;
 }
 
+@media (max-width:1199px){
+  .grand-slider {
+    display: none;
+  }
+}
+@media (min-width:1200px){
+  .petit-slider {
+    display: none;
+  }
+}
+
+/* @media (max-width:1200px) {
+  body > div > div {
+    margin-bottom: 250px;
+  }
+} */
+
 @keyframes slide {
   0%{
     background-image: url('/images/model.jpg');
@@ -432,7 +448,7 @@ footer h4::before {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: #e91ebd;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
