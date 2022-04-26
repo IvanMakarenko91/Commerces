@@ -149,6 +149,12 @@ body > section > div:nth-child(1) {
   letter-spacing: 3px;
 }
 
+hr {
+  width: 8%;
+  height: 2px;
+  background-color: rgb(201, 185, 39);
+}
+
 /* Produits */
 
 .box {
@@ -255,6 +261,7 @@ body > section > div:nth-child(1) {
   height: 50vh;
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
 }
 
 #populaire-photo .container {
@@ -352,7 +359,7 @@ body > div > div {
   width: 100%;
   height: 35vh;
   animation: slide 9s infinite;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .slider .content {
@@ -360,7 +367,7 @@ body > div > div {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.3);
-  border-radius: 10px;
+  border-radius: 2px;
 }
 .slider .principal {
   left: 50%;
