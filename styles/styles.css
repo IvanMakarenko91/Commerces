@@ -268,7 +268,6 @@ body > section > div:nth-child(1) {
 
 /* Onglet */
 .onglet-js {
-  margin: auto;
   width: 80%;
   height: 35vh;
   background: #f1f1f1;
@@ -338,4 +337,64 @@ body > section > div:nth-child(1) {
 
 body > div > div {
   height: 50vh;
+}
+
+/* Slider auto */
+
+.load {
+  animation: slide 3s;
+}
+
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 35vh;
+  animation: slide 9s infinite;
+  border-radius: 10px;
+}
+
+.slider .content {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+.slider .principal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  letter-spacing: 1px;
+}
+
+.principal h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.principal p {
+  font-size: 20px;
+}
+
+@keyframes slide {
+  0%{
+    background-image: url('/images/model.jpg');
+  }
+  33%{
+    background-image: url('/images/model.jpg');
+  }
+  33.01%{
+    background-image: url('/images/model2.jpg');
+  }
+  66%{
+    background-image: url('/images/model2.jpg');
+  }
+  66.01%{
+    background-image: url('/images/model.jpg');
+  }
+  100%{
+    background-image: url('/images/model.jpg');
+  }
 }
