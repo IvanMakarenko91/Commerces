@@ -85,6 +85,10 @@ nav img:first-child {
   cursor: pointer;
 }
 
+#navbarSupportedContent > ul > li:nth-child(1) > a {
+  color: rgb(201, 185, 39);
+}
+
 /* Navbar responsive */
 
 .navbar-light .navbar-toggler {
