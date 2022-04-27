@@ -272,6 +272,20 @@ hr {
   align-items: center;
 }
 
+#populaire-photo > div > p {
+  font-size:16px; 
+  font-weight: 600;
+}
+
+@media (max-width:460px) {
+  #populaire-photo > div > p {
+    font-size: 14px;
+  }
+  #populaire-photo > div > h2 {
+    font-size: 20px;
+  }
+}
+
 /* Onglet */
 .onglet-js {
   width: 100%;
@@ -387,6 +401,9 @@ hr {
     max-width: 120px;
     min-height: 115px;
   }
+  body > div > div.row.align-items-center.justify-content-center.petit-slider > div > div > div.content > div > p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width:364px) {
@@ -441,6 +458,7 @@ body > div > div {
 .principal p {
   font-size: 20px;
 }
+
 
 @media (max-width:1199px){
   .grand-slider {
