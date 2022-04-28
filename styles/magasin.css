@@ -120,7 +120,8 @@ nav img:first-child {
   justify-content: center;
   align-items: end;
   /* padding: 0 5%; */
-
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   position: relative;
 }
 
@@ -190,6 +191,74 @@ nav img:first-child {
   left: 150px;
   top: 0;
   background-color: black;
+}
+
+/* Magasin section */
+
+.product {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover .appart {
+  opacity: 1;
+}
+
+.product .buy-btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transform: translateY(-5px);
+  /* opacity: 0; */
+  transition: 0.3s all;
+}
+
+/* .product:hover .buy-btn {
+  transform: translateY(-5px);
+  opacity: 1;
+} */
+
+.product:hover {
+  border: 1px solid black;
+}
+
+.appart svg {
+  width: 30px;
+  height: 30px;
+  margin: 6px 0;
+  color: rgb(218, 32, 141);
+}
+
+.product button {
+  border-radius: 2px;
+}
+
+svg:hover {
+  color: red;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+.appart {
+  position: absolute;
+  height: 67%;
+  width: 50px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  opacity: 0;
+  transition: 0.3s all;
 }
 
 /* Footer */
