@@ -191,18 +191,6 @@ nav img:first-child {
   padding: 10px;
 }
 
-/* .dropdown-menu-1 {
-  display: none;
-}
-
-.dropdown-menu ul li:hover .dropdown-menu-1 {
-  display: block;
-  position: absolute;
-  left: 150px;
-  top: 0;
-  background-color: black;
-} */
-
 /* Magasin section */
 
 .product {
@@ -314,6 +302,35 @@ svg:hover {
   }
 }
 
+
+/* Promotions */
+
+.activation .btn {
+  outline: none;
+  padding: 15px 8px;
+  background-color: #f5f0f0;
+  color: black;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 160px;
+}
+
+@media (max-width:410px) {
+  .activation .btn {
+    border-radius: 10px;
+  }
+}
+
+.activation .active {
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+} 
+
+.activation .btn:hover {
+  color: white;
+  background-color: rgb(92, 92, 92);
+}
 
 /* Footer */
 
