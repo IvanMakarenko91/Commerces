@@ -110,11 +110,15 @@ nav img:first-child {
   }
 }
 
+.marge-hauteur {
+  height: 82px;
+}
+
 /* Drop Down Menu */
 
 .menu-bar {
   background-color: rgb(207, 197, 197);
-  height: 90px;
+  min-height: 90px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -132,6 +136,12 @@ nav img:first-child {
 .menu-bar ul {
   list-style: none;
   display: flex;
+}
+
+@media (max-width:935px) {
+  .menu-bar ul {
+    display: block;
+  }
 }
 
 .menu-bar ul li {
@@ -181,7 +191,7 @@ nav img:first-child {
   padding: 10px;
 }
 
-.dropdown-menu-1 {
+/* .dropdown-menu-1 {
   display: none;
 }
 
@@ -191,7 +201,7 @@ nav img:first-child {
   left: 150px;
   top: 0;
   background-color: black;
-}
+} */
 
 /* Magasin section */
 
@@ -289,6 +299,12 @@ svg:hover {
   .page li {
     margin: 8px 5px;
     padding: 6px 6px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .search-field {
+    width: 180px;
   }
 }
 

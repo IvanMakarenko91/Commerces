@@ -22,7 +22,7 @@
     <div class="container-fluid">
       <img src="/images/logo1.png" alt=""><h2>T-shirt Co</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i id="bar" class="fas fa-bars"></i></span>
+        <span><i id="bar" class="fas fa-bars ml-0"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto"> 
@@ -48,7 +48,7 @@
   </nav>
   
 
-  <div style="height: 82px;"></div>
+  <div class="marge-hauteur"></div>
 
   <!-- Drop down menu -->
   <div class="container-fluid">
@@ -59,47 +59,25 @@
             <input type="search" name="search" class="search-field py-1 pl-3" placeholder="recherche model"/>
           </li>
           <li><a href="#">Categories</a></li>
-          <li><a href="#">Homme</a></li>
+          <li><a href="#">Homme <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="#">Femme <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <li>
-                  <a href="#">Team <i class="fas fa-caret-right"></i></a>
-                  <div class="dropdown-menu-1">
-                    <ul>
-                      <li><a href="#">Team-1</a></li>
-                      <li><a href="#">Team-2</a></li>
-                      <li><a href="#">Team-3</a></li>
-                      <li><a href="#">Team-4</a></li>
-                    </ul>
-                  </div>
-                </li>
                 <li><a href="#">FAQ</a></li>
               </ul>
             </div>
           </li>
-          <li><a href="#">Offres <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-menu">
-                <ul>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li>
-                    <a href="#">Team <i class="fas fa-caret-right"></i></a>
-                    <div class="dropdown-menu-1">
-                      <ul>
-                        <li><a href="#">Team-1</a></li>
-                        <li><a href="#">Team-2</a></li>
-                        <li><a href="#">Team-3</a></li>
-                        <li><a href="#">Team-4</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
-              </div>
-          </li>
+          <li><a href="#">Offres</a></li>
         </ul>
       </div>
     </div>
