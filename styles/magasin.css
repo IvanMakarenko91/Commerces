@@ -72,6 +72,12 @@ nav img:first-child {
   color: rgb(201, 185, 39);
 }
 
+#prix {
+  font-size: 1rem;
+  color: #525357;
+  margin-left: 5px;
+}
+
 /* Navbar responsive */
 
 .navbar-light .navbar-toggler {

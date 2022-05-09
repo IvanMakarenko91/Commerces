@@ -21,7 +21,7 @@ if(document.readyState == "loading"){
 // Making Function
 function ready(){
   // remove item from cart
-  var reomveCartButtons = document.getElementsByClassName("cart-remove")
+  var reomveCartButtons = document.getElementsByClassName("cart-remove");
   console.log(reomveCartButtons)
   for (var i = 0; i < reomveCartButtons.length; i++) {
     var button = reomveCartButtons[i];
@@ -91,19 +91,19 @@ function addProductToCart(title, prices, productImg) {
     }
   }
 
-var cartBoxContent = `
-                      <img src="${productImg}" alt="" class="cart-img">
-                      <input type="number" value="1" class="cart-quantity text-center" placeholder="1">
-                      <i class="fa-solid fa-trash cart-remove"></i>
-                      <div class="detail-box mx-2">
-                        <h4 class="cart-product-title">${title}</h4>
-                        <div class="cart-price">${prices}</div>
-                      </div>
-                      `;
-cartShopBox.innerHTML = cartBoxContent;
-cartItems.append(cartShopBox);
-cartShopBox.getElementsByClassName("cart-remove")[0].addEventListener("click", removeCartItem);
-cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change", quantityChanged);
+  var cartBoxContent = `
+                        <img src="${productImg}" alt="" class="cart-img">
+                        <input type="number" value="1" class="cart-quantity text-center" placeholder="1">
+                        <i class="fa-solid fa-trash cart-remove"></i>
+                        <div class="detail-box mx-2">
+                          <h4 class="cart-product-title">${title}</h4>
+                          <div class="cart-price">${prices}</div>
+                        </div>
+                        `;
+  cartShopBox.innerHTML = cartBoxContent;
+  cartItems.append(cartShopBox);
+  cartShopBox.getElementsByClassName("cart-remove")[0].addEventListener("click", removeCartItem);
+  cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change", quantityChanged);
 }
 
 
@@ -124,5 +124,6 @@ function updateTotal() {
     total = Math.round(total * 100) / 100;
 
     document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+    document.getElementById("prix").innerText = total +  "€" ;
   
 }
