@@ -114,6 +114,99 @@ nav img:first-child {
   height: 82px;
 }
 
+/* Panier */
+
+.cart {
+  position: fixed;
+  top: 82px;
+  right: -100%;
+  height: 900px;
+  width: 400px;
+  padding: 20px;
+  background-color: #f5f0f0;
+  box-shadow: 4px black;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.cart.activer {
+  right: 0;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  padding: 10px;
+}
+
+.cart-price {
+  font-weight: 600;
+}
+
+.cart-quantity {
+  border: 1px solid black;
+  outline-color: goldenrod;
+  width: 45px;
+  margin-right: 20px;
+}
+
+.cart-remove {
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid black;
+}
+
+.total-tile {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-buy {
+  display: flex;
+  border: none;
+  background-color: goldenrod;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: black;
+  color: white;
+}
+
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+}
+
+.detail-box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+.detail-box > h4 {
+  margin-bottom: 0rem;
+}
+
+@media (max-width:600px) {
+  .cart {
+    width: 100%;
+  }
+}
 /* Drop Down Menu */
 
 .menu-bar {
