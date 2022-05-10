@@ -47,7 +47,7 @@ nav img:first-child {
   left: 0;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link, .nav-item a {
   padding: 0 20px;
   color: black;
   transition: 0.3s ease;
