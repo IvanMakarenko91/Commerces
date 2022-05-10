@@ -127,6 +127,9 @@ nav img:first-child {
 main {
   position: relative;
   top: 60px;
+}
+
+.image-fond {
   background-image: url("/images/model.jpg");
   background-size: cover;
   width: 100%;
