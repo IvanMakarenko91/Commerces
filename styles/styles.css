@@ -109,7 +109,7 @@ nav img:first-child {
   color: white;
 }
 
-@media (max-width:992px) {
+@media (max-width:991px) {
   body > nav > div > button:hover,
   body > nav > div > button:focus {
     background-color: rgb(201, 185, 39);
