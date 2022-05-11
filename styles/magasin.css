@@ -234,7 +234,7 @@ nav img:first-child {
 /* Drop Down Menu */
 
 .menu-bar {
-  background-color: rgb(207, 197, 197);
+  background-color: rgb(219, 210, 210);
   min-height: 90px;
   width: 100%;
   display: flex;
@@ -262,22 +262,19 @@ nav img:first-child {
 }
 
 .menu-bar ul li {
-  /* width: 120px; */
   padding: 10px 30px;
-  /* text-align: center; */
-
   position: relative;
 }
 
 .menu-bar ul li a {
   font-size: 20px;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: all 0.3s;
 }
 
 .menu-bar ul li a:hover {
-  color: rgb(235, 215, 36);
+  color: rgb(77, 73, 73);
 }
 
 .fas {
@@ -294,8 +291,8 @@ nav img:first-child {
   display: block;
   position: absolute;
   left: 0;
-  top: 100%;
-  background-color: black;
+  top: 80%;
+  background-color: rgb(207, 203, 203);
 }
 
 .menu-bar ul li:hover .dropdown-menu ul {
@@ -330,17 +327,17 @@ nav img:first-child {
 }
 
 .product .buy-btn {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(27, 27, 27);
   color: white;
   transform: translateY(-5px);
-  /* opacity: 0; */
+  opacity: 0.8;
   transition: 0.3s all;
 }
 
-/* .product:hover .buy-btn {
+.product:hover .buy-btn {
   transform: translateY(-5px);
   opacity: 1;
-} */
+}
 
 .product:hover {
   border: 1px solid black;
@@ -349,16 +346,28 @@ nav img:first-child {
 .appart svg {
   width: 30px;
   height: 30px;
-  margin: 6px 0;
-  color: rgb(218, 32, 141);
+  margin: 7px 7px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.fond {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5 ease;
+  margin-top: 10px;
+}
+svg:hover {
+  color: black;
 }
 
 .product button {
   border-radius: 2px;
-}
-
-svg:hover {
-  color: red;
 }
 
 .star {
@@ -377,7 +386,7 @@ svg:hover {
   right: 0;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  margin-top: 10px;
   opacity: 0;
   transition: 0.3s all;
 }
