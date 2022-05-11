@@ -362,12 +362,6 @@ hr {
   color: rgb(201, 185, 39);
 }
 
-.marques img{
-  min-height: 90px;
-  max-height: 100px;
-  border-radius: 2px;
-}
-
 .colv img {
   max-height: 150px;
   max-width: 150px;
@@ -413,10 +407,6 @@ hr {
   }
   .container-onglets {
     height: 20%;
-  }
-  .marques img {
-    max-width: 75px;
-    max-height: 60px;
   }
   .colv img {
     max-width: 120px;

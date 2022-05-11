@@ -2,51 +2,51 @@
 const products = [
   {
     product: "vet1",
-    price: 800
+    price: 30
   },
   {
     product: "vet2",
-    price: 550
+    price: 25
   },
   {
     product: "vet3",
-    price: 875
+    price: 10
   },
   {
     product: "vet4",
-    price: 1100
+    price: 20
   },
   {
     product: "vet5",
-    price: 1000
+    price: 25
   },
   {
     product: "vet6",
-    price: 400
+    price: 15
   },
   {
     product: "vet7",
-    price: 950
+    price: 39
   },
   {
     product: "vet8",
-    price: 400
+    price: 12
   },
   {
     product: "vet9",
-    price: 600
+    price: 15
   },
   {
     product: "vet10",
-    price: 200
+    price: 28
   },
   {
     product: "vet11",
-    price: 180
+    price: 9
   },
   {
     product: "vet12",
-    price: 450
+    price: 21
   },
 ]
 
