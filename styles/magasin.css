@@ -151,6 +151,7 @@ nav img:first-child {
   box-shadow: 4px black;
   z-index: 1;
   transition: 0.3s;
+  overflow: scroll;
 }
 
 .cart.activer {
