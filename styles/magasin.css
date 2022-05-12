@@ -236,13 +236,12 @@ nav img:first-child {
 /* Drop Down Menu */
 
 .menu-bar {
-  background-color: rgb(219, 210, 210);
+  background-color: rgb(245, 240, 240);
   min-height: 90px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
-  /* padding: 0 5%; */
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   position: relative;
@@ -255,12 +254,6 @@ nav img:first-child {
 .menu-bar ul {
   list-style: none;
   display: flex;
-}
-
-@media (max-width:935px) {
-  .menu-bar ul {
-    display: block;
-  }
 }
 
 .menu-bar ul li {
@@ -292,20 +285,56 @@ nav img:first-child {
 .menu-bar ul li:hover .dropdown-menu {
   display: block;
   position: absolute;
-  left: 0;
-  top: 80%;
-  background-color: rgb(207, 203, 203);
+  left: -200px;
+  top: 90%;
+  background-color: rgb(243, 239, 239);
 }
 
 .menu-bar ul li:hover .dropdown-menu ul {
-  display: block;
+  display: flex;
   margin: 10px;
 }
 
 .menu-bar ul li:hover .dropdown-menu ul li {
-  width: 150px;
-  padding: 10px;
+  width: 250px;
 }
+
+body > div:nth-child(4) > div > div > ul > li:nth-child(2) > div > ul > ul:nth-child(2), body > div:nth-child(4) > div > div > ul > li:nth-child(2) > div > ul > ul:nth-child(3) {
+  display: block;
+}
+
+.img-choix {
+  width: 240px;
+  height: 500px;
+}
+
+@media (max-width:935px) {
+  .menu-bar ul {
+    display: block;
+  }
+  .img-choix-photo {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    left: -120px;
+  }
+}
+
+@media (max-width:600px) {
+  .menu-bar ul li a {
+    font-size: 13px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 110px;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    left: 0px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    margin-left: 0px;
+  }
+}
+
 
 /* Magasin section */
 
