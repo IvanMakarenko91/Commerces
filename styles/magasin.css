@@ -231,6 +231,7 @@ nav img:first-child {
     width: 100%;
   }
 }
+
 /* Drop Down Menu */
 
 .menu-bar {
@@ -324,6 +325,7 @@ nav img:first-child {
 
 .product:hover .appart {
   opacity: 1;
+  z-index: 3;
 }
 
 .product .buy-btn {
@@ -389,6 +391,16 @@ svg:hover {
   margin-top: 10px;
   opacity: 0;
   transition: 0.3s all;
+}
+
+.image-zoom {
+  overflow: hidden;
+}
+
+.zoom-survol:hover{
+  -ms-transform: scale(1.2) translate(0px); 
+  -webkit-transform: scale(1.2) translate(0px); 
+  transform: scale(1.2) translate(0px);
 }
 
 /* Pagination */
