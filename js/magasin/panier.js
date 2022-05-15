@@ -45,7 +45,7 @@ function ready(){
 
 // Buy Button
 function buyButtonClicked() {
-  alert('placé dans le panier')
+  swal("Achat effectué", "Merci pour votre confiance ! La commande arrive.", "success");
   var cartContent = document.getElementsByClassName('cart-content')[0];
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
@@ -86,7 +86,11 @@ function addProductToCart(title, prices, productImg) {
   var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
   for (var i = 0; i < cartItemsNames.length; i++) {
     if (cartItemsNames[i].innerText == title) {  
-      alert('deja ajouté');
+      swal({
+        title: "Déjà dans le panier !",
+        icon: "warning",
+        text: "Allez dans le panier pour changer la quantité."
+    })
       return;
     }
   }
@@ -123,7 +127,6 @@ function updateTotal() {
     // If price containe some cents value
     total = Math.round(total * 100) / 100;
 
-    document.getElementsByClassName("total-price")[0].innerText = "$" + total;
-    document.getElementById("prix").innerText = total +  "€" ;
-  
+    document.getElementsByClassName("total-price")[0].innerText = total + "€";
+    document.getElementById("prix").innerText = total +  "€"; 
 }

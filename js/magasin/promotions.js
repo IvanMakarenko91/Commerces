@@ -78,37 +78,37 @@ for (let i = 0; i < products.length; i++) { // A chaque tour de boucle, on incre
 
 function codePromo() {
 for (let i = 0; i < products.length; i++) {
-  let product = document.getElementById(products[i].product) 
-  let li = document.createElement('del')
-  li.innerText = products[i].price + " €"
-  let newPromoPrice = getPromoPrice(products[i].price, 10) 
-  let roundedPrice = roundDecimal(newPromoPrice) 
+  let product = document.getElementById(products[i].product);
+  let li = document.createElement('del');
+  li.innerText = products[i].price + " €";
+  let newPromoPrice = getPromoPrice(products[i].price, 10);
+  let roundedPrice = roundDecimal(newPromoPrice);
   
   
-  product.innerText = formatPrice(roundedPrice) + " avec code promo "
-  product.append(li) 
+  product.innerText = formatPrice(roundedPrice) + " avec code promo ";
+  product.append(li); 
   }
 }
 
 function toutesTaxes() {
   for (let i = 0; i < products.length; i++) { 
-    let product = document.getElementById(products[i].product)
+    let product = document.getElementById(products[i].product);
     
-    let newPromoPrice = getPromoPrice(products[i].price, 0) 
-    let roundedPrice = roundDecimal(newPromoPrice) 
+    let newPromoPrice = getPromoPrice(products[i].price, 0);
+    let roundedPrice = roundDecimal(newPromoPrice);
     
-    product.innerText = formatPrice(roundedPrice) + " TTC"
+    product.innerText = formatPrice(roundedPrice) + " TTC";
     }
   }
 
 function horsTva() {
   for (let i = 0; i < products.length; i++) { 
-    let product = document.getElementById(products[i].product)  
+    let product = document.getElementById(products[i].product);
       
-    let newPromoPrice = getPromoPrice(products[i].price, 20) 
-    let roundedPrice = roundDecimal(newPromoPrice) 
+    let newPromoPrice = getPromoPrice(products[i].price, 20);
+    let roundedPrice = roundDecimal(newPromoPrice);
       
-    product.innerText = formatPrice(roundedPrice) + " Hors TVA"
+    product.innerText = formatPrice(roundedPrice) + " Hors TVA";
     }
   }
 
