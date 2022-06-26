@@ -63,7 +63,7 @@ function roundDecimal(number) {
 
 // Fonction remplaçant une chaine de caractère par un autre modèle.
 function formatPrice(price) {
-  return price.toString().replace(".", ",") + " €"
+  return price + " €";
 }
 
 for (let i = 0; i < products.length; i++) { // A chaque tour de boucle, on increment i de 1.
@@ -85,7 +85,7 @@ for (let i = 0; i < products.length; i++) {
   let roundedPrice = roundDecimal(newPromoPrice);
   
   
-  product.innerText = formatPrice(roundedPrice) + " avec code promo ";
+  product.innerText = formatPrice(roundedPrice.toFixed(2)) + " avec code promo ";
   product.append(li); 
   }
 }
@@ -97,7 +97,7 @@ function toutesTaxes() {
     let newPromoPrice = getPromoPrice(products[i].price, 0);
     let roundedPrice = roundDecimal(newPromoPrice);
     
-    product.innerText = formatPrice(roundedPrice) + " TTC";
+    product.innerText = formatPrice(roundedPrice.toFixed(2)) + " TTC";
     }
   }
 
@@ -108,7 +108,7 @@ function horsTva() {
     let newPromoPrice = getPromoPrice(products[i].price, 20);
     let roundedPrice = roundDecimal(newPromoPrice);
       
-    product.innerText = formatPrice(roundedPrice) + " Hors TVA";
+    product.innerText = formatPrice(roundedPrice.toFixed(2)) + " Hors TVA";
     }
   }
 

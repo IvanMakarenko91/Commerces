@@ -22,7 +22,6 @@ if(document.readyState == "loading"){
 function ready(){
   // remove item from cart
   var reomveCartButtons = document.getElementsByClassName("cart-remove");
-  console.log(reomveCartButtons)
   for (var i = 0; i < reomveCartButtons.length; i++) {
     var button = reomveCartButtons[i];
     button.addEventListener("click", removeCartItem)
@@ -127,6 +126,6 @@ function updateTotal() {
     // If price containe some cents value
     total = Math.round(total * 100) / 100;
 
-    document.getElementsByClassName("total-price")[0].innerText = total + "€";
-    document.getElementById("prix").innerText = total +  "€"; 
+    document.getElementsByClassName("total-price")[0].innerText = total.toFixed(2) + "€";
+    document.getElementById("prix").innerText = total.toFixed(2) +  "€"; 
 }

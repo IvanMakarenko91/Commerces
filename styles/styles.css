@@ -53,6 +53,24 @@ button:hover {
   background-color: #2e2d2d;
 }
 
+#accueil a, #populaire-photo a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#accueil a:hover, #populaire-photo a:hover {
+  background-color: #2e2d2d;
+  text-decoration: none;
+}
+
 /* Navbar */
 nav h2 {
   font-family: 'Passion One', cursive;
@@ -336,6 +354,10 @@ hr {
   border-right: 1px solid #333;
 }
 
+.onglets:hover {
+  background-color: rgb(202, 197, 197);
+}
+
 .contenu {
   height: 70%;
   width: 95%;
@@ -373,6 +395,12 @@ hr {
   margin-left: 20px;
 }
 
+.devise i {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 /* Anim  onglet-js*/
 
 .activer {
@@ -396,7 +424,7 @@ hr {
 
 @media (max-width:575px) {
   .onglet-js {
-    height: 35vh;
+    height: 36vh;
   }
   .contenu {
     font-size: 0.8rem;
@@ -548,7 +576,6 @@ footer ul li:not(:last-child) {
 footer ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: white;
   text-decoration: none;
   font-weight: 300;
   color: #bbbbbb;
