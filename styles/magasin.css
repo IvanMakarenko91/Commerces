@@ -342,6 +342,7 @@ body > div:nth-child(4) > div > div > ul > li:nth-child(2) > div > ul > ul:nth-c
 .product {
   margin-bottom: 2rem;
   position: relative;
+  border: 1px solid transparent;
 }
 
 .product img {
